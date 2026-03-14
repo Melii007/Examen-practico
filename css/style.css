@@ -1,3 +1,82 @@
-*{
-    box-sizing: border-boxinit;
+* {
+    box-sizing: border-box;
 }
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "navbar"
+        "portada"
+        "características"
+        "beneficios"
+        "footer";
+    gap: 7px;
+    height: 100px;
+    padding: 0%;
+}
+
+.item {
+    display: flex;
+    padding: 10px;
+}
+
+
+body {
+    background-color: rgb(4, 4, 68);
+}
+
+.navbar {
+    grid-area: navbar;
+    border: 3px solid rgb(2, 14, 128);
+    padding: 50px;
+}
+
+.link-modelos{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.portada {
+    background-color: rgb(4, 4, 68);
+    grid-area: portada;
+    width: 100%;
+    font-family: 'Baloo 2', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicas {
+    grid-area: características;
+    background-color: white;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.carousel-caption{
+    background: rgba(211, 216, 255, 0.836);
+    border-radius: 10px;
+    color: black;
+}
+
+.beneficios {
+    grid-area: beneficios;
+    padding: 100px;
+    padding-bottom: 250px;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 0%;
+    color: #000;
+}
+
+footer{
+    width: 100%;
+}
+
